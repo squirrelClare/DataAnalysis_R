@@ -1,0 +1,5 @@
+library(pls)
+attach(iris)
+model<-plsr(Sepal.Length~Sepal.Width+Petal.Length+Petal.Width,x=TRUE,y=TRUE)
+m<-lm(Sepal.Length~Sepal.Width+Petal.Length+Petal.Width,x=TRUE,y=TRUE)
+detach(iris)
